@@ -1,0 +1,1498 @@
+Cenarios positivos
+    teste 001 - 200 GET all clients
+        request
+            curl --location --request GET 'https://dev.devops.jobii.com.br/api/jobii-service/clients?page=0&size=30&sort=id&direction=ASC' \
+            --header 'accept: application/json' \
+            --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzeXN0ZW0iOiJzb3V0aHN5c3RlbSIsInVzZXJfaWQiOjEsImFjdGl2ZV9zeXN0ZW1faWQiOjEsInVzZXJfbmFtZSI6InNvdXRoc3lzdGVtQGpvYmlpLmNvbS5iciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE2MjgyMTA1MTIsImF1dGhvcml0aWVzIjpbIlNPVVRIX0FETUlOIl0sImp0aSI6IjUzYmEwZjk3LTlmYWQtNDgyYy05NDM0LWFkNjZiZGM1ODc4MyIsImNsaWVudF9pZCI6ImNsaWVudCJ9.2ol3QpRJJnClbvD4Fg8V3BtCS3Rcol9DiM8A96Vy-tA'
+
+        response
+            {
+                "content": [
+                    {
+                        "id": 1,
+                        "name": "Melhor presidente do mundo - O golpe dos Illuminatis maçonicos",
+                        "alias": "Morto VivoSim",
+                        "address": {
+                            "id": 14,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 14,
+                        "affiliates": 3,
+                        "archive": {
+                            "id": 160,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/1/big-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=31f17a0b4a762ae9ad09316c4d880bef3285170bf63ee6cfec6199c1fd2f7a05",
+                            "fileName": "big-logo.png",
+                            "createdDate": "2021-05-28 10:26:21",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 160,
+                        "managers": [
+                            {
+                                "id": 1,
+                                "name": "Felipe Rodrigues",
+                                "phone": "(51) 99999-9999",
+                                "email": "felipe.souza@southsystem.com.br",
+                                "clientId": 1
+                            }
+                        ],
+                        "managersIds": [
+                            1
+                        ],
+                        "createdDate": "2021-04-27 11:35:22",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 2,
+                        "name": "TesteSelfrgergerhbe",
+                        "alias": "hynyn",
+                        "address": {
+                            "id": 4,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 4,
+                        "affiliates": 4,
+                        "archive": {
+                            "id": 793,
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/2/hqdefault.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6396363420728700c5d2b3513eaf0c866e024172b7d9dd52dcdf85292e146e8a",
+                            "fileName": "hqdefault.jpg",
+                            "createdDate": "2021-07-13 11:45:28",
+                            "createdBy": "felipe.souza@southsystem.com.br"
+                        },
+                        "archiveId": 793,
+                        "managers": [
+                            {
+                                "id": 2,
+                                "name": "Paulo Henrique",
+                                "phone": "(61) 99999-9999",
+                                "email": "paulo.silva@southsystem.com.br",
+                                "clientId": 2
+                            }
+                        ],
+                        "managersIds": [
+                            2
+                        ],
+                        "createdDate": "2021-04-27 13:31:37",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Nubank",
+                        "alias": "Nu",
+                        "address": {
+                            "id": 5,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 5,
+                        "affiliates": 4,
+                        "managers": [
+                            {
+                                "id": 53,
+                                "name": "Nubank",
+                                "phone": "(11) 11111-1111",
+                                "email": "boliva3518@godpeed.com",
+                                "clientId": 3
+                            },
+                            {
+                                "id": 1079,
+                                "name": "Felipe",
+                                "phone": "(51) 82778-2871",
+                                "email": "dienifne@idneinfc.com",
+                                "clientId": 3
+                            }
+                        ],
+                        "managersIds": [
+                            53,
+                            1079
+                        ],
+                        "createdDate": "2021-04-27 13:32:18",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Agibank",
+                        "address": {
+                            "id": 7,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Gravataí",
+                            "district": "São Jerônimo",
+                            "street": "Rua Canela",
+                            "number": "876878",
+                            "complement": "",
+                            "zipCode": "94040-030"
+                        },
+                        "addressId": 7,
+                        "affiliates": 2,
+                        "archive": {
+                            "id": 5,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/4/big-hipermercado-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a6316be38005d848f46f9450dabad2cc27153501f1c0f6ae3f406f76cdfe4abf",
+                            "fileName": "big-hipermercado-logo.png",
+                            "createdDate": "2021-04-27 13:55:40",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 5,
+                        "managers": [
+                            {
+                                "id": 4,
+                                "name": "BIGResp",
+                                "phone": "(51) 99999-9999",
+                                "email": "fdoeunf@gmail.com",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 94,
+                                "name": "Gerencia test paginação",
+                                "phone": "(51) 999999999",
+                                "email": "south@southsystem.com.br",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 307,
+                                "name": "Rafael",
+                                "phone": "(99) 91999-9999",
+                                "email": "pozzer@gmail.com",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 308,
+                                "name": "Pozzer",
+                                "phone": "(51) 99999-9999",
+                                "email": "pozzerteste@gmail.com",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 309,
+                                "name": "Karina",
+                                "phone": "(51) 99999-9999",
+                                "email": "karina@karina.com",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 311,
+                                "name": "Pernambuco",
+                                "phone": "(51) 66666-6666",
+                                "email": "pedro.urruth@southsystem.com.br",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 314,
+                                "name": "Agibank",
+                                "phone": "(65) 33333-3333",
+                                "email": "southsystem@jobii.com.br",
+                                "clientId": 4
+                            },
+                            {
+                                "id": 316,
+                                "name": "White T",
+                                "phone": "(54) 23232-3232",
+                                "email": "whitet@gmail.com",
+                                "clientId": 4
+                            }
+                        ],
+                        "managersIds": [
+                            4,
+                            94,
+                            307,
+                            308,
+                            309,
+                            311,
+                            314,
+                            316
+                        ],
+                        "createdDate": "2021-04-27 13:55:39",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 5,
+                        "name": "TesteDois1",
+                        "address": {
+                            "id": 10,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valpara1íso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 10,
+                        "affiliates": 4,
+                        "archive": {
+                            "id": 807,
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/5/maxresdefault.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6ce721599f2fd73ac3e2a2b323e3add50ebbcb0b184a2958aee889fd8e91e436",
+                            "fileName": "maxresdefault.jpg",
+                            "createdDate": "2021-07-20 09:32:46",
+                            "createdBy": "felipe.souza@southsystem.com.br"
+                        },
+                        "archiveId": 807,
+                        "managers": [
+                            {
+                                "id": 5,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "pusinju@cir.na",
+                                "clientId": 5
+                            },
+                            {
+                                "id": 19,
+                                "name": "A",
+                                "phone": "(61) 55555-5555",
+                                "email": "a@gmail.com",
+                                "clientId": 5
+                            },
+                            {
+                                "id": 22,
+                                "name": "Dois",
+                                "phone": "(61) 4444-4444",
+                                "email": "b@gmail.com",
+                                "clientId": 5
+                            }
+                        ],
+                        "managersIds": [
+                            5,
+                            19,
+                            22
+                        ],
+                        "createdDate": "2021-04-27 14:28:59",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Testeuyu",
+                        "address": {
+                            "id": 11,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 11,
+                        "affiliates": 4,
+                        "archive": {
+                            "id": 794,
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/6/foto.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=46d989ca809b912e28e460174cec5a0069f5dd64839ca7ef7f68719955cb3db8",
+                            "fileName": "foto.png",
+                            "createdDate": "2021-07-13 11:46:26",
+                            "createdBy": "felipe.souza@southsystem.com.br"
+                        },
+                        "archiveId": 794,
+                        "managers": [
+                            {
+                                "id": 54,
+                                "name": "Teste",
+                                "phone": "(11) 11111-1111",
+                                "email": "teste@teste.com.br",
+                                "clientId": 6
+                            }
+                        ],
+                        "managersIds": [
+                            54
+                        ],
+                        "createdDate": "2021-04-27 14:31:00",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Testando",
+                        "address": {
+                            "id": 12,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 12,
+                        "affiliates": 4,
+                        "managers": [
+                            {
+                                "id": 7,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "juba@kavew.ro",
+                                "clientId": 7
+                            }
+                        ],
+                        "managersIds": [
+                            7
+                        ],
+                        "createdDate": "2021-04-27 14:32:28",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 8,
+                        "name": "Nubank",
+                        "address": {
+                            "id": 13,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 13,
+                        "affiliates": 2,
+                        "managers": [
+                            {
+                                "id": 8,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "afoema@wasdujzud.ms",
+                                "clientId": 8
+                            },
+                            {
+                                "id": 25,
+                                "name": "Nubank",
+                                "phone": "(77) 7777-7777",
+                                "email": "teste@teste.com.br",
+                                "clientId": 8
+                            }
+                        ],
+                        "managersIds": [
+                            8,
+                            25
+                        ],
+                        "createdDate": "2021-04-27 14:33:28",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 9,
+                        "name": "TESTANDO UM",
+                        "address": {
+                            "id": 15,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 15,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 10,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "rafael.pozzer@southsystem.com.br",
+                                "clientId": 9
+                            }
+                        ],
+                        "managersIds": [
+                            10
+                        ],
+                        "createdDate": "2021-04-27 14:45:22",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 10,
+                        "name": "Ele e Tafarel",
+                        "address": {
+                            "id": 18,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 18,
+                        "affiliates": 0,
+                        "archive": {
+                            "id": 52,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/10/unkngrown.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7260dbaca906bafae72bc07d59a19f819af0434e6c6e24745071161054a87528",
+                            "fileName": "unkngrown.png",
+                            "createdDate": "2021-05-11 10:41:48",
+                            "createdBy": "southsystem-infra@jobii.com.br"
+                        },
+                        "archiveId": 52,
+                        "managers": [
+                            {
+                                "id": 12,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "di@pudad.mx",
+                                "clientId": 10
+                            }
+                        ],
+                        "managersIds": [
+                            12
+                        ],
+                        "createdDate": "2021-04-27 14:46:13",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 11,
+                        "name": "TESTANDO DOIS",
+                        "address": {
+                            "id": 20,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 20,
+                        "affiliates": 2,
+                        "managers": [
+                            {
+                                "id": 13,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "fabeabe@zeshegzan.mt",
+                                "clientId": 11
+                            }
+                        ],
+                        "managersIds": [
+                            13
+                        ],
+                        "createdDate": "2021-04-27 14:54:24",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 12,
+                        "name": "TESTANDO TRES",
+                        "address": {
+                            "id": 22,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 22,
+                        "affiliates": 1,
+                        "managers": [
+                            {
+                                "id": 15,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "mewev@dod.gy",
+                                "clientId": 12
+                            },
+                            {
+                                "id": 16,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "mewev@dod.gy",
+                                "clientId": 12
+                            }
+                        ],
+                        "managersIds": [
+                            15,
+                            16
+                        ],
+                        "createdDate": "2021-04-27 14:56:01",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 13,
+                        "name": "Dell",
+                        "address": {
+                            "id": 23,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Porto Alegre",
+                            "district": "Bom Fim",
+                            "street": "Rua General João Telles",
+                            "number": "164",
+                            "complement": "sala 203",
+                            "zipCode": "90035-120"
+                        },
+                        "addressId": 23,
+                        "affiliates": 2,
+                        "archive": {
+                            "id": 15,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/13/Dell_logo_2016.svg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43199&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=47b038fe887b8660ea58a275fe32f1f5f5d5ce2bcdd1303d970f20fc0c85249b",
+                            "fileName": "Dell_logo_2016.svg.png",
+                            "createdDate": "2021-04-28 14:59:19",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 15,
+                        "managers": [
+                            {
+                                "id": 17,
+                                "name": "Responsável Dell",
+                                "phone": "(51) 2222-4444",
+                                "email": "goroce5502@godpeed.com",
+                                "clientId": 13
+                            },
+                            {
+                                "id": 85,
+                                "name": "Gestão DOIS",
+                                "phone": "(11) 2222-7777",
+                                "email": "goroce5502@godpeed.com",
+                                "clientId": 13
+                            }
+                        ],
+                        "managersIds": [
+                            17,
+                            85
+                        ],
+                        "createdDate": "2021-04-28 10:48:53",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 14,
+                        "name": "Nubank",
+                        "address": {
+                            "id": 25,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Gravataí",
+                            "district": "São Jerônimo",
+                            "street": "Rua Maricá",
+                            "number": "432",
+                            "complement": "",
+                            "zipCode": "94040-050"
+                        },
+                        "addressId": 25,
+                        "affiliates": 1,
+                        "archive": {
+                            "id": 11,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/14/Capa%2520LinkedIn.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=33ba832dd8c96d561ce75aca146592cd948107ffbdaef3b7ee9a8cf454d35cea",
+                            "fileName": "Capa%20LinkedIn.jpg",
+                            "createdDate": "2021-04-28 12:12:21",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 11,
+                        "managers": [
+                            {
+                                "id": 55,
+                                "name": "Nubank",
+                                "phone": "(11) 11111-1111",
+                                "email": "teste@teste.com.br",
+                                "clientId": 14
+                            }
+                        ],
+                        "managersIds": [
+                            55
+                        ],
+                        "createdDate": "2021-04-28 12:12:21",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 15,
+                        "name": "GetNet",
+                        "address": {
+                            "id": 32,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 32,
+                        "affiliates": 1,
+                        "archive": {
+                            "id": 18,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/15/superget-637514008457653771.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3a50f9bea83edc6f71bdfe27b6beb17aa7a068870dc550fd40f8511c31897e8c",
+                            "fileName": "superget-637514008457653771.png",
+                            "createdDate": "2021-04-29 11:30:37",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 18,
+                        "managers": [
+                            {
+                                "id": 29,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "pewow@ihabnaz.bh",
+                                "clientId": 15
+                            }
+                        ],
+                        "managersIds": [
+                            29
+                        ],
+                        "createdDate": "2021-04-29 08:30:14",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 16,
+                        "name": "Melhor presidente do mundo atualizado",
+                        "address": {
+                            "id": 34,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 34,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 30,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "atolibi@re.tp",
+                                "clientId": 16
+                            },
+                            {
+                                "id": 31,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "atolibi@re.tp",
+                                "clientId": 16
+                            }
+                        ],
+                        "managersIds": [
+                            30,
+                            31
+                        ],
+                        "createdDate": "2021-04-29 08:43:49",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 17,
+                        "name": "Melhor presidente do mundo atualizado",
+                        "address": {
+                            "id": 36,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 36,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 32,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "rigrimhi@zoozbu.za",
+                                "clientId": 17
+                            },
+                            {
+                                "id": 33,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "rigrimhi@zoozbu.za",
+                                "clientId": 17
+                            }
+                        ],
+                        "managersIds": [
+                            32,
+                            33
+                        ],
+                        "createdDate": "2021-04-29 09:08:32",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 18,
+                        "name": "Melhor presidente do mundo atualizado",
+                        "address": {
+                            "id": 38,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 38,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 34,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "jiobezo@ogari.sg",
+                                "clientId": 18
+                            }
+                        ],
+                        "managersIds": [
+                            34
+                        ],
+                        "createdDate": "2021-04-29 09:09:14",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 19,
+                        "name": "Zaffari",
+                        "address": {
+                            "id": 40,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "48",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 40,
+                        "affiliates": 1,
+                        "archive": {
+                            "id": 19,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/19/logotipo_loja_zaffari.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e531b5835bdf1c5258fb64dd65f3c3074f7c9fe68f680e7d7b9523fd50fad747",
+                            "fileName": "logotipo_loja_zaffari.jpg",
+                            "createdDate": "2021-04-29 11:34:22",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 19,
+                        "managers": [
+                            {
+                                "id": 36,
+                                "name": "Pelo golpe",
+                                "phone": "(61) 99999-9999",
+                                "email": "canwe@de.dm",
+                                "clientId": 19
+                            },
+                            {
+                                "id": 37,
+                                "name": "Pelo golpe 2",
+                                "phone": "(61) 99999-9999",
+                                "email": "canwe@de.dm",
+                                "clientId": 19
+                            }
+                        ],
+                        "managersIds": [
+                            36,
+                            37
+                        ],
+                        "createdDate": "2021-04-29 09:10:14",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 20,
+                        "name": "teste",
+                        "address": {
+                            "id": 41,
+                            "country": "Brasil",
+                            "state": "RJ",
+                            "city": "Rio de Janeiro",
+                            "district": "Recreio dos Bandeirantes",
+                            "street": "Rua Armando Santos",
+                            "number": "10000",
+                            "complement": "",
+                            "zipCode": "22790-330"
+                        },
+                        "addressId": 41,
+                        "affiliates": 0,
+                        "archive": {
+                            "id": 65,
+                            "archiveType": {
+                                "name": "PROFILE_PHOTO",
+                                "description": "Foto de perfil"
+                            },
+                            "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/20/Sem%20t%C3%ADtulo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210805T224414Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43199&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e295ed11d5bd9f3ca48e3acb63cee7ac103ce01cc66ed6214dcbe631f77fd133",
+                            "fileName": "Sem título.png",
+                            "createdDate": "2021-05-17 14:44:19",
+                            "createdBy": "southsystem@jobii.com.br"
+                        },
+                        "archiveId": 65,
+                        "managers": [
+                            {
+                                "id": 38,
+                                "name": "teste",
+                                "phone": "(21) 22222-2222",
+                                "email": "teste@teste.com",
+                                "clientId": 20
+                            }
+                        ],
+                        "managersIds": [
+                            38
+                        ],
+                        "createdDate": "2021-04-29 11:29:34",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 21,
+                        "name": "Christian Martins",
+                        "address": {
+                            "id": 43,
+                            "country": "Brasil",
+                            "state": "RJ",
+                            "city": "Rio de Janeiro",
+                            "district": "Recreio dos Bandeirantes",
+                            "street": "Rua Armando Santos",
+                            "number": "10000",
+                            "complement": "",
+                            "zipCode": "22790-330"
+                        },
+                        "addressId": 43,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 47,
+                                "name": "Christian",
+                                "phone": "(11) 11111-1111",
+                                "email": "teste@teste.com.br",
+                                "clientId": 21
+                            }
+                        ],
+                        "managersIds": [
+                            47
+                        ],
+                        "createdDate": "2021-04-29 13:24:30",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 22,
+                        "name": "4all  looko",
+                        "address": {
+                            "id": 44,
+                            "country": "Brasil",
+                            "state": "RJ",
+                            "city": "Rio de Janeiro",
+                            "district": "Recreio dos Bandeirantes",
+                            "street": "Rua Armando Santos",
+                            "number": "1000",
+                            "complement": "",
+                            "zipCode": "22790-330"
+                        },
+                        "addressId": 44,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 40,
+                                "name": "teste",
+                                "phone": "(22) 22222-2222",
+                                "email": "christian.soares@southsystem.com.br",
+                                "clientId": 22
+                            }
+                        ],
+                        "managersIds": [
+                            40
+                        ],
+                        "createdDate": "2021-04-29 14:16:25",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 23,
+                        "name": "ClienteTeste",
+                        "address": {
+                            "id": 50,
+                            "country": "Brasil",
+                            "state": "SP",
+                            "city": "São Paulo",
+                            "district": "Americanópolis",
+                            "street": "Travessa Santo Antonino",
+                            "number": "1",
+                            "complement": "sala 1",
+                            "zipCode": "04429-003"
+                        },
+                        "addressId": 50,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 41,
+                                "name": "ResponsávelUm",
+                                "phone": "(13) 94796-3439",
+                                "email": "resp@gmail.com",
+                                "clientId": 23
+                            }
+                        ],
+                        "managersIds": [
+                            41
+                        ],
+                        "createdDate": "2021-04-30 09:55:56",
+                        "createdBy": "paulo.silva@southsystem.com.br"
+                    },
+                    {
+                        "id": 24,
+                        "name": "Teste",
+                        "address": {
+                            "id": 56,
+                            "country": "Brasil",
+                            "state": "SP",
+                            "city": "São Paulo",
+                            "district": "Barra Funda",
+                            "street": "Rua Vitorino Carmilo",
+                            "number": "10",
+                            "complement": "",
+                            "zipCode": "01153-000"
+                        },
+                        "addressId": 56,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 56,
+                                "name": "Teste",
+                                "phone": "(11) 11111-1111",
+                                "email": "testeeeeeeeeeee@teste.com.br",
+                                "clientId": 24
+                            }
+                        ],
+                        "managersIds": [
+                            56
+                        ],
+                        "createdDate": "2021-04-30 13:46:38",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 25,
+                        "name": "Cliente Validação",
+                        "address": {
+                            "id": 57,
+                            "country": "Brasil",
+                            "state": "SP",
+                            "city": "São Paulo",
+                            "district": "Barra Funda",
+                            "street": "Rua Vitorino Carmilo",
+                            "number": "50",
+                            "complement": "",
+                            "zipCode": "01153-000"
+                        },
+                        "addressId": 57,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 58,
+                                "name": "Gestor Teste",
+                                "phone": "(11) 11111-1111",
+                                "email": "gestortesteteste@gmail.com",
+                                "clientId": 25
+                            }
+                        ],
+                        "managersIds": [
+                            58
+                        ],
+                        "createdDate": "2021-04-30 13:47:48",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 26,
+                        "name": "Validacao 111111111",
+                        "address": {
+                            "id": 58,
+                            "country": "Brasil",
+                            "state": "GO",
+                            "city": "Valparaíso de Goiás",
+                            "district": "Parque Esplanada II",
+                            "street": "Rua 12",
+                            "number": "20",
+                            "complement": "",
+                            "zipCode": "72878-033"
+                        },
+                        "addressId": 58,
+                        "affiliates": 0,
+                        "createdDate": "2021-04-30 15:52:01",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 27,
+                        "name": "Melhor",
+                        "address": {
+                            "id": 59,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Porto Alegre",
+                            "district": "Santa Tereza",
+                            "street": "Rua Mariano de Matos",
+                            "number": "1",
+                            "complement": "",
+                            "zipCode": "90880-250"
+                        },
+                        "addressId": 59,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 61,
+                                "name": "Jean",
+                                "phone": "(55) 55555-5555",
+                                "email": "admin@southsystem.com",
+                                "clientId": 27
+                            }
+                        ],
+                        "managersIds": [
+                            61
+                        ],
+                        "createdDate": "2021-05-03 12:19:42",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 28,
+                        "name": "Jean",
+                        "address": {
+                            "id": 60,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Porto Alegre",
+                            "district": "Santa Tereza",
+                            "street": "Rua Mariano de Matos",
+                            "number": "1",
+                            "complement": "",
+                            "zipCode": "90880-250"
+                        },
+                        "addressId": 60,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 62,
+                                "name": "Jean",
+                                "phone": "(55) 55555-5555",
+                                "email": "jeantrindadegarcia@gmail.com",
+                                "clientId": 28
+                            }
+                        ],
+                        "managersIds": [
+                            62
+                        ],
+                        "createdDate": "2021-05-03 12:20:31",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 29,
+                        "name": "Melhor",
+                        "address": {
+                            "id": 61,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Porto Alegre",
+                            "district": "Santa Tereza",
+                            "street": "Rua Mariano de Matos",
+                            "number": "1",
+                            "complement": "",
+                            "zipCode": "90880-250"
+                        },
+                        "addressId": 61,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 63,
+                                "name": "Jean",
+                                "phone": "(55) 55555-5555",
+                                "email": "smps@jobii.com.br",
+                                "clientId": 29
+                            }
+                        ],
+                        "managersIds": [
+                            63
+                        ],
+                        "createdDate": "2021-05-03 12:20:53",
+                        "createdBy": "southsystem@jobii.com.br"
+                    },
+                    {
+                        "id": 30,
+                        "name": "Melhor",
+                        "address": {
+                            "id": 67,
+                            "country": "Brasil",
+                            "state": "RS",
+                            "city": "Porto Alegre",
+                            "district": "Santa Tereza",
+                            "street": "Rua Mariano de Matos",
+                            "number": "888888",
+                            "complement": "aaa",
+                            "zipCode": "90880-250"
+                        },
+                        "addressId": 67,
+                        "affiliates": 0,
+                        "managers": [
+                            {
+                                "id": 64,
+                                "name": "Jean",
+                                "phone": "(55) 55555-5555",
+                                "email": "admin2@southsystem.com",
+                                "clientId": 30
+                            }
+                        ],
+                        "managersIds": [
+                            64
+                        ],
+                        "createdDate": "2021-05-05 15:37:01",
+                        "createdBy": "southsystem@jobii.com.br"
+                    }
+                ],
+                "pageable": {
+                    "sort": [
+                        {
+                            "direction": "ASC",
+                            "property": "id",
+                            "ignoreCase": false,
+                            "nullHandling": "NATIVE",
+                            "descending": false,
+                            "ascending": true
+                        }
+                    ],
+                    "offset": 0,
+                    "pageNumber": 0,
+                    "pageSize": 30,
+                    "paged": true,
+                    "unpaged": false
+                },
+                "totalPages": 22,
+                "totalElements": 632,
+                "last": false,
+                "number": 0,
+                "sort": [
+                    {
+                        "direction": "ASC",
+                        "property": "id",
+                        "ignoreCase": false,
+                        "nullHandling": "NATIVE",
+                        "descending": false,
+                        "ascending": true
+                    }
+                ],
+                "size": 30,
+                "numberOfElements": 30,
+                "first": true,
+                "empty": false
+            }
+        
+    teste 002 - 200 GET id client
+        request
+        curl --location --request GET 'https://dev.devops.jobii.com.br/api/jobii-service/clients/643' \
+        --header 'accept: application/json' \
+        --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzeXN0ZW0iOiJzb3V0aHN5c3RlbSIsInVzZXJfaWQiOjEsImFjdGl2ZV9zeXN0ZW1faWQiOjEsInVzZXJfbmFtZSI6InNvdXRoc3lzdGVtQGpvYmlpLmNvbS5iciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE2Mjg3MjY5NDIsImF1dGhvcml0aWVzIjpbIlNPVVRIX0FETUlOIl0sImp0aSI6ImQxNzIxOGJjLWRiM2EtNDMzMi05MjE3LTVmZTFkZDc1Y2UxNiIsImNsaWVudF9pZCI6ImNsaWVudCJ9.fG9BPZGxEVmcXXrBCRFpLuk2-6kCxlasIb_zFrwby54'
+
+        response
+        {
+            "id": 643,
+            "name": "DOM CASMURRO",
+            "alias": "VIVO",
+            "address": {
+                "id": 2182,
+                "country": "Brasil",
+                "state": "DF",
+                "city": "Brasília",
+                "district": "Taguatinga Norte (Taguatinga)",
+                "street": "QNA 28",
+                "number": "23",
+                "complement": "",
+                "zipCode": "72110-280"
+            },
+            "addressId": 2182,
+            "affiliates": 0,
+            "managers": [
+                {
+                    "id": 1092,
+                    "name": "NEREU COSTA",
+                    "phone": "(61) 99998-9877",
+                    "email": "NEREUC@gmail.com",
+                    "clientId": 643
+                }
+            ],
+            "managersIds": [
+                1092
+            ],
+            "createdDate": "2021-08-10 19:36:14",
+            "createdBy": "southsystem@jobii.com.br",
+            "lastModifiedDate": "2021-08-10 19:36:14",
+            "lastModifiedBy": "southsystem@jobii.com.br"
+        }
+
+    teste 003 - 201 POST create client
+        request
+            curl --location --request POST 'https://dev.devops.jobii.com.br/api/jobii-service/clients' \
+            --header 'accept: application/json' \
+            --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzeXN0ZW0iOiJzb3V0aHN5c3RlbSIsInVzZXJfaWQiOjEsImFjdGl2ZV9zeXN0ZW1faWQiOjEsInVzZXJfbmFtZSI6InNvdXRoc3lzdGVtQGpvYmlpLmNvbS5iciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE2Mjg3MjY5NDIsImF1dGhvcml0aWVzIjpbIlNPVVRIX0FETUlOIl0sImp0aSI6ImQxNzIxOGJjLWRiM2EtNDMzMi05MjE3LTVmZTFkZDc1Y2UxNiIsImNsaWVudF9pZCI6ImNsaWVudCJ9.fG9BPZGxEVmcXXrBCRFpLuk2-6kCxlasIb_zFrwby54' \
+            --header 'Content-Type: application/json' \
+            --data-raw '{
+                "name":"DOM CASMURRO",
+                "alias":"VIVO",
+                "address":{
+                    "country":"Brasil",
+                    "state":"DF",
+                    "city":"Taguatinga",
+                    "district":"QNA 28",
+                    "street":"QNB",
+                    "number":"23",
+                    "complement":"",
+                    "zipCode":"72110-280"
+                },
+                "managers":[{
+                    "name":"NEREU COSTA",
+                    "phone":"(61) 99998-9877",
+                    "email":"teste28gmail.com",
+                    "clientId":0
+                }]
+            }'
+
+        response
+        {
+                "id": 657,
+                "name": "DOM CASMURRO",
+                "alias": "VIVO",
+                "address": {
+                    "id": 2202,
+                    "country": "Brasil",
+                    "state": "DF",
+                    "city": "Brasília",
+                    "district": "Taguatinga Norte (Taguatinga)",
+                    "street": "QNA 28",
+                    "number": "23",
+                    "complement": "",
+                    "zipCode": "72110-280"
+                },
+                "addressId": 2202,
+                "affiliates": 0,
+                "managers": [
+                    {
+                        "id": 1106,
+                        "name": "NEREU COSTA",
+                        "phone": "(61) 99998-9877",
+                        "email": "teste28gmail.com",
+                        "clientId": 657
+                    }
+                ],
+                "managersIds": [
+                    1106
+                ],
+                "createdDate": "2021-08-11 19:15:46",
+                "createdBy": "southsystem@jobii.com.br",
+                "lastModifiedDate": "2021-08-11 19:15:46",
+                "lastModifiedBy": "southsystem@jobii.com.br"
+            }
+
+
+    teste 004 - 201 POST Add archive to client
+        request
+            curl --location --request POST 'https://dev.devops.jobii.com.br/api/jobii-service/clients' \
+            --header 'accept: application/json' \
+            --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzeXN0ZW0iOiJzb3V0aHN5c3RlbSIsInVzZXJfaWQiOjEsImFjdGl2ZV9zeXN0ZW1faWQiOjEsInVzZXJfbmFtZSI6InNvdXRoc3lzdGVtQGpvYmlpLmNvbS5iciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE2Mjg3MjY5NDIsImF1dGhvcml0aWVzIjpbIlNPVVRIX0FETUlOIl0sImp0aSI6ImQxNzIxOGJjLWRiM2EtNDMzMi05MjE3LTVmZTFkZDc1Y2UxNiIsImNsaWVudF9pZCI6ImNsaWVudCJ9.fG9BPZGxEVmcXXrBCRFpLuk2-6kCxlasIb_zFrwby54' \
+            --header 'Content-Type: application/json' \
+            --data-raw '{
+                "name":"DOM CASMURRO",
+                "alias":"VIVO",
+                "address":{
+                    "country":"Brasil",
+                    "state":"DF",
+                    "city":"Taguatinga",
+                    "district":"QNA 28",
+                    "street":"QNB",
+                    "number":"23",
+                    "complement":"",
+                    "zipCode":"72110-280"
+                },
+                "managers":[{
+                    "name":"NEREU COSTA",
+                    "phone":"(61) 99998-9877",
+                    "email":"teste29gmail.com",
+                    "clientId":0
+                }]
+            }'
+                    
+
+        response
+                    {
+                "id": 658,
+                "name": "DOM CASMURRO",
+                "alias": "VIVO",
+                "address": {
+                    "id": 2203,
+                    "country": "Brasil",
+                    "state": "DF",
+                    "city": "Brasília",
+                    "district": "Taguatinga Norte (Taguatinga)",
+                    "street": "QNA 28",
+                    "number": "23",
+                    "complement": "",
+                    "zipCode": "72110-280"
+                },
+                "addressId": 2203,
+                "affiliates": 0,
+                "managers": [
+                    {
+                        "id": 1107,
+                        "name": "NEREU COSTA",
+                        "phone": "(61) 99998-9877",
+                        "email": "teste29gmail.com",
+                        "clientId": 658
+                    }
+                ],
+                "managersIds": [
+                    1107
+                ],
+                "createdDate": "2021-08-11 19:18:43",
+                "createdBy": "southsystem@jobii.com.br",
+                "lastModifiedDate": "2021-08-11 19:18:43",
+                "lastModifiedBy": "southsystem@jobii.com.br"
+            }
+
+    teste 005 - 200 PUT Update client by id
+
+        request
+            curl --location --request PUT 'https://dev.devops.jobii.com.br/api/jobii-service/clients' \
+            --header 'accept: application/json' \
+            --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzeXN0ZW0iOiJzb3V0aHN5c3RlbSIsInVzZXJfaWQiOjEsImFjdGl2ZV9zeXN0ZW1faWQiOjEsInVzZXJfbmFtZSI6InNvdXRoc3lzdGVtQGpvYmlpLmNvbS5iciIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE2Mjg3MjY5NDIsImF1dGhvcml0aWVzIjpbIlNPVVRIX0FETUlOIl0sImp0aSI6ImQxNzIxOGJjLWRiM2EtNDMzMi05MjE3LTVmZTFkZDc1Y2UxNiIsImNsaWVudF9pZCI6ImNsaWVudCJ9.fG9BPZGxEVmcXXrBCRFpLuk2-6kCxlasIb_zFrwby54' \
+            --header 'Content-Type: application/json' \
+            --data-raw '{
+            "id": 1,
+            "name": "Melhor presidente do mundo - O golpe dos Illuminatis maçonicos",
+            "alias": "Morto VivoSim",
+            "address": {
+                "id": 14,
+                "country": "Brasil",
+                "state": "GO",
+                "city": "Valparaíso de Goiás",
+                "district": "Parque Esplanada II",
+                "street": "Rua 12",
+                "number": "48",
+                "complement": "",
+                "zipCode": "72878-033"
+            },
+            "addressId": 14,
+            "affiliates": 3,
+            "archive": {
+                "id": 160,
+                "archiveType": "CURRICULUM",
+                "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/1/big-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210808T205640Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43199&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=47c359986edb10c489d689db35ca86b793233812ea0d33ea1012d634d91738fd",
+                "fileName": "big-logo.png",
+                "createdDate": "2021-05-28 10:26:21",
+                "createdBy": "2021-05-28 10:26:21"
+            },
+            "archiveId": 160,
+            "managers": [
+                {
+                "id": 1,
+                "name": "Felipe Rodrigues",
+                "phone": "(51) 99999-9999",
+                "email": "felipe.souza@southsystem.com.br",
+                "clientId": 1
+                }
+            ],
+            "managersIds": [
+                1
+            ],
+            "createdDate": "2021-04-27 11:35:22",
+            "createdBy": "southsystem@jobii.com.br"
+            }'
+        
+
+        response
+                    {
+                "id": 1,
+                "name": "Melhor presidente do mundo - O golpe dos Illuminatis maçonicos",
+                "alias": "Morto VivoSim",
+                "address": {
+                    "id": 14,
+                    "country": "Brasil",
+                    "state": "GO",
+                    "city": "Valparaíso de Goiás",
+                    "district": "Parque Esplanada II",
+                    "street": "Rua 12",
+                    "number": "48",
+                    "complement": "",
+                    "zipCode": "72878-033"
+                },
+                "addressId": 14,
+                "affiliates": 3,
+                "archive": {
+                    "id": 160,
+                    "archiveType": {
+                        "name": "PROFILE_PHOTO",
+                        "description": "Foto de perfil"
+                    },
+                    "url": "https://jobii-development.s3.amazonaws.com/southsystem/clients/1/big-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210811T222050Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=AKIAUTVPCAK7MN4SV3F6%2F20210811%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3bb26727d6ee38b0b63d5247f93752ca6e8d42cafe0ca430f71df0eec6d7113e",
+                    "fileName": "big-logo.png",
+                    "createdDate": "2021-05-28 10:26:21",
+                    "createdBy": "southsystem@jobii.com.br",
+                    "lastModifiedDate": "2021-06-21 17:55:14",
+                    "lastModifiedBy": "southsystem@jobii.com.br"
+                },
+                "archiveId": 160,
+                "managers": [
+                    {
+                        "id": 1,
+                        "name": "Felipe Rodrigues",
+                        "phone": "(51) 99999-9999",
+                        "email": "felipe.souza@southsystem.com.br",
+                        "clientId": 1
+                    }
+                ],
+                "managersIds": [
+                    1
+                ],
+                "lastModifiedDate": "2021-08-11 19:20:50",
+                "lastModifiedBy": "southsystem@jobii.com.br"
+            }
+
+    teste 006 - 200 DELETE client by id
+
+        request
+        
+
+        response
+    
+
+Cenarios negativos
+
+    teste 007 - 401 do GET all Clients
+
+    teste 008 - 404 do GET id Client 
